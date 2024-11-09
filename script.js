@@ -47,7 +47,7 @@ function displayResults() {
     // to begin with, we wanna nothing 
     results.innerHTML = '';
 
-    // the chosenOption here is the selectedOption.value, which is the key of the poll object 
+    // the selectedOptionValue is the key of the poll object, and voteCount is it's value 
     for (let [selectedOptionValue , voteCount] of poll) {
         const optionElement = document.createElement('div'); 
         // set up CSS with bootstrap
